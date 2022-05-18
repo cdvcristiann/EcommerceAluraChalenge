@@ -1,0 +1,116 @@
+main {
+    background-color: var(--background-blanco);
+}
+
+.producto .borde {
+    padding: 3em 7em 3em 7em;
+}
+
+.producto-title {
+    font-family: 'Raleway';
+    font-size: 3rem;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    text-align: left;
+}
+
+.producto .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+}
+
+.producto-list {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.producto-item {
+    padding: .3em;
+    font-family: 'Raleway';
+    font-size: 1rem;
+}
+
+.producto-imagen {
+    flex-grow: 1;
+    width: 115rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.producto-item .producto-item__icon {
+    background-color: var(--fuente-productos-azul);
+    color: white;
+    margin: 0.1rem;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+.producto-item .producto-item__icon-eliminar {
+    background-color: rgb(193, 38, 38);
+    color: white;
+    margin: 0.1rem;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+.producto-item .producto-item__icon:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    border: 1px solid #2a7ae4;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.producto-item .producto-item__icon-eliminar:hover {
+    background: #fff;
+    color: rgb(193, 38, 38);
+    cursor: pointer;
+    border: 1px solid rgb(193, 38, 38);
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+
+/* Responsive */
+
+@media (min-width:320px) and (max-width: 768px) {
+    .producto .borde {
+        background-color: #E5E5E5;
+    }
+    .producto .container {
+        padding-right: .1rem;
+        padding-left: .1rem;
+    }
+    .producto .container {
+        display: block;
+    }
+    .producto-title {
+        font-family: 'Raleway';
+        font-size: 1rem;
+    }
+    .producto-item {
+        padding: .1em;
+        font-family: 'Raleway';
+        font-size: .5rem;
+    }
+    .producto-imagen {
+        flex-grow: 1;
+        width: 100%;
+    }
+    .productos {
+        padding-top: 0.2rem;
+    }
+    .texto-categoria h2 {
+        font-size: 1rem;
+    }
+}

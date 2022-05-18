@@ -5,83 +5,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/producto.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/Logo.svg" width="16" height="16">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/Logo.svg" width="16" height="16">
     <title>AluraGeek</title>
+    <script src="https://kit.fontawesome.com/1356b06277.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="cabecera_container">
-            <img class="cabecera_logo" src="./assets/logo.svg" alt="AluraGeek logo">
+            <a href="./index.html">
+                <img class="cabecera_logo" src="./assets/img/logo.svg" alt="AluraGeek logo"></a>
             <div class="busqueda">
                 <form action=""></form>
                 <input type="search" class="busqueda_campo" placeholder="¿Qué deseas buscar?" name="search">
-                <button class="button-busqueda"><img src="./assets/lupa.png" alt="Icono Lupa"></button>
+                <button class="button-busqueda"><img src="./assets/img/lupa.png" alt="Icono Lupa"></button>
             </div>
             <a href="login.html"><button class="login">Login</button> </a>
-            <button class="button-busqueda-login"><img src="./assets/lupa-negro.png" alt="Icono Lupa"></button>
+            <button class="button-busqueda-login"><img src="./assets/img/lupa-negro.png" alt="Icono Lupa"></button>
         </div>
     </header>
     <main>
-        <section class="contenido_container">
-            <section class="categoria">
+        <section class="producto">
+            <div class="container borde">
+                <img alt="icono" class="producto-imagen" src="./assets/img/taza trupper.png" width="560" height="315" />
+                <div class="producto">
+                    <h2 class="producto-title">Producto XYZ</h2>
+                    <ul class="producto-list">
+                        <li class="producto-item">$60</li>
+                        <li class="producto-item">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid
+                            litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</li>
+
+                    </ul>
+                    <div class="producto-item">
+                        <ul class="producto-list">
+                            <li class="producto-item">
+                                <a class="producto-item__icon" href="#">
+                                    <i class="far fa-edit"> Editar</i>
+                                </a>
+                                <a class="producto-item__icon-eliminar" href="#">
+                                    <i class="far fa-trash-alt"> Eliminar</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="categoria">
+            <div class="texto-categoria">
+                <h2>Productos Similares</h2>
+            </div>
+            <div class="productos">
                 <div class="card">
-                    <img src="./assets/consolas-1.png" alt="">
+                    <img src="./assets/img/consolas-1.png" alt="">
                     <h3>Producto XYZ</h3>
                     <p>$ 60,00</p>
-                    <p>descripcion</p>
+                    <a href="producto.html">Ver producto</a>
                 </div>
-            </section>
-            <section class="categoria" id="consolas">
-                <div class="texto-categoria">
-                    <h2>Consolas</h2>
-                    <a href="">Ver todo <img src="./assets/Vector.png"></a>
+                <div class="card">
+                    <img src="./assets/img/consolas-2.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$ 60,00</p>
+                    <a href="producto.html">Ver producto</a>
                 </div>
-                <div class="productos">
-                    <div class="card">
-                        <img src="./assets/consolas-1.png" alt="">
-                        <h3>Producto XYZ</h3>
-                        <p>$ 60,00</p>
-                        <a href="">Ver producto</a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/consolas-2.png" alt="">
-                        <h3>Producto XYZ</h3>
-                        <p>$ 60,00</p>
-                        <a href="">Ver producto</a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/consolas-3.png" alt="">
-                        <h3>Producto XYZ</h3>
-                        <p>$ 60,00</p>
-                        <a href="">Ver producto</a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/consolas-4.png" alt="">
-                        <h3>Producto XYZ</h3>
-                        <p>$ 60,00</p>
-                        <a href="">Ver producto</a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/consolas-5.png" alt="">
-                        <h3>Producto XYZ</h3>
-                        <p>$ 60,00</p>
-                        <a href="">Ver producto</a>
-                    </div>
+                <div class="card">
+                    <img src="./assets/img/consolas-3.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$ 60,00</p>
+                    <a href="producto.html">Ver producto</a>
                 </div>
-            </section>
+                <div class="card">
+                    <img src="./assets/img/consolas-4.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$ 60,00</p>
+                    <a href="producto.html">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/consolas-5.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$ 60,00</p>
+                    <a href="producto.html">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/consolas-6.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$ 60,00</p>
+                    <a href="producto.html">Ver producto</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="logo-acerca-de">
+                <div class="info-logo">
+                    <img class="info-logo-img" src="./assets/img/Logo.svg" alt="alura geek logo" />
+                </div>
+                <div class="acerca-de">
+                    <a class="acerca-de-link" href="#">Quienes somos</a>
+                    <a class="acerca-de-link" href="#">Politica de privacidad</a>
+                    <a class="acerca-de-link" href="#">Programa de fidelidad</a>
+                    <a class="acerca-de-link" href="#">Nuestras tiendas</a>
+                    <a class="acerca-de-link" href="#">Quiero ser franquiciado</a>
+                    <a class="acerca-de-link" href="#">Anuncie aqui</a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2 class="contact-title">Hable con nosotros</h2>
+                <form action="" class="contact-form">
+                    <input class="contact-form-name" type="text" name="Nombre" placeholder="Ingrese su nombre" required/>
+                    <textarea class="contact-form-message" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+                    <input class="contact-form-btn" type="submit" value="Enviar Mensaje" />
+                </form>
+            </div>
         </section>
     </main>
-    <div class="footer">
-
-    </div>
-
+    <footer>
+        <div class="footer">
+            <h2 class="footer-texto">Desarrollado por <a href="#">Cristian Villordo</a></h2>
+            <h3 class="footer-texto"> 2022</h3>
+        </div>
+    </footer>
 </body>
 
 </html>

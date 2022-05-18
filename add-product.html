@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="./assets/css/reset.css">
-<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/add_products.css">
 <link rel="stylesheet" href="./assets/css/style-login.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/contacto.css">
 <link rel="stylesheet" href="./assets/css/footer.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600;700&display=swap" rel="stylesheet">
+<title>Agregar Productos</title>
 
 <body>
     <header>
@@ -25,10 +27,20 @@
     <section class="categoria">
         <div class="container-login center">
             <form class="form-control">
-                <h2>Iniciar Sesión</h2>
-                <input type="text" name="usuario" placeholder="Escriba su correo electrónico">
-                <input type="password" name="clave" placeholder="Escriba su contraseña">
-                <button type="submit" name="entrar">Entrar</button>
+                <h2>Agregar nuevo producto</h2>
+                <div>
+                    <div class="drop-area">
+                        <h2 id="hdos">Arrastra y suelta imagenes </h2>
+                        <span>0</span>
+                        <button id="btn">Selecciona tus archivos</button>
+                        <input type="file" name="" id="input-file" hidden multiple>
+                    </div>
+                    <div id="preview"></div>
+                </div>
+                <input type="text" name="usuario" placeholder="Nombre del producto">
+                <input type="number" name="clave" placeholder="Precio del producto">
+                <textarea name="usuario" placeholder="Descripcion del producto"></textarea>
+                <button type="submit" name="entrar">Agregar Producto</button>
             </form>
         </div>
     </section>
